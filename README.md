@@ -10,4 +10,4 @@ TODO:
 - Add OCR for figuring out what the food packaging says
 
 Done:
-[x] Hook into USDA food composition API to return a list of ingredients for a given food item
+- Hook into USDA food composition API to return a list of ingredients for a given food item
