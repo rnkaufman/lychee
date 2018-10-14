@@ -9,7 +9,6 @@ class IngredientFinder
 
   def initialize(item)
     @item = item 
-    list_ingredients
   end
 
   def list_ingredients
