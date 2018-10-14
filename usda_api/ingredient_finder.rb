@@ -37,5 +37,3 @@ class IngredientFinder
     end
   end
 end
-
-IngredientFinder.new(ARGV[0])
