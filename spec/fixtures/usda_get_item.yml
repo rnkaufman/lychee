@@ -2,53 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.nal.usda.gov/ndb/search/?api_key=&format=json&max=25&offset=0&q=Trader%20Joe%27s%20Acacia%20Honey&sort=n
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Server:
-      - openresty
-      Date:
-      - Sun, 14 Oct 2018 05:43:32 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Vary:
-      - Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Cache:
-      - MISS
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-    body:
-      encoding: ASCII-8BIT
-      string: |-
-        {
-          "error": {
-            "code": "API_KEY_MISSING",
-            "message": "No api_key was supplied. Get one at https://api.nal.usda.gov:443"
-          }
-        }
-    http_version: 
-  recorded_at: Sun, 14 Oct 2018 05:43:33 GMT
-- request:
-    method: get
     uri: https://api.nal.usda.gov/ndb/search/?api_key=4K3YWLNk8MuWsSF1YhcxKyp8l88lAc36KVya2IsX&format=json&max=25&offset=0&q=Trader%20Joe%27s%20Acacia%20Honey&sort=n
     body:
       encoding: US-ASCII
@@ -68,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 14 Oct 2018 06:02:33 GMT
+      - Sun, 14 Oct 2018 06:05:51 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -80,7 +33,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3598'
+      - '3596'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -89,6 +42,8 @@ http_interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Headers:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Set-Cookie:
+      - BIGipServerndb-pool=1289292554.20480.0000; path=/; Httponly; Secure
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       - max-age=63072000; includeSubDomains; preload
@@ -140,7 +95,7 @@ http_interactions:
             }
         }
     http_version: 
-  recorded_at: Sun, 14 Oct 2018 06:02:33 GMT
+  recorded_at: Sun, 14 Oct 2018 06:05:51 GMT
 - request:
     method: get
     uri: https://api.nal.usda.gov/ndb/reports/?api_key=4K3YWLNk8MuWsSF1YhcxKyp8l88lAc36KVya2IsX&format=json&ndbno=45085468&type=b
@@ -162,7 +117,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 14 Oct 2018 06:02:36 GMT
+      - Sun, 14 Oct 2018 06:05:51 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -174,7 +129,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3597'
+      - '3595'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -187,7 +142,7 @@ http_interactions:
       - max-age=31536000; includeSubDomains; preload
       - max-age=63072000; includeSubDomains; preload
       Age:
-      - '5'
+      - '4'
       Via:
       - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Cache:
@@ -310,5 +265,5 @@ http_interactions:
         \           ]\n        },\n        \"footnotes\": [\n            \n        ]\n
         \   }\n}"
     http_version: 
-  recorded_at: Sun, 14 Oct 2018 06:02:36 GMT
+  recorded_at: Sun, 14 Oct 2018 06:05:52 GMT
 recorded_with: VCR 4.0.0
