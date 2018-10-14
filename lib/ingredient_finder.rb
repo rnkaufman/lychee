@@ -4,7 +4,7 @@ require "httparty"
 class IngredientFinder
   attr_reader :item
 
-  Dotenv.load("../.env")
+  Dotenv.load(".env")
   USDA_API_KEY = ENV['USDA_API_KEY']
 
   def initialize(item)
