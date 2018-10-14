@@ -1,6 +1,5 @@
 require "dotenv"
 require "httparty"
-require "pry"
 
 class IngredientFinder
   attr_reader :item
@@ -18,7 +17,11 @@ class IngredientFinder
     if ndb_item_number
       item_endpoint = "https://api.nal.usda.gov/ndb/reports/?ndbno=#{ndb_item_number}&type=b&format=json&api_key=#{USDA_API_KEY}"
       response = HTTParty.get(item_endpoint)
-      puts response["report"]["food"]["ing"]["desc"]
+      begin
+        response["report"]["food"]["ing"]["desc"]
+      rescue
+        raise "No ingredients found for item '#{@item}'"
+      end
     end
   end
 
@@ -30,7 +33,7 @@ class IngredientFinder
     begin    
       response["list"]["item"][0]["ndbno"]
     rescue
-      raise "No items were found"
+      raise "No items matching '#{@item}' were found"
     end
   end
 end
