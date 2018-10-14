@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.nal.usda.gov/ndb/search/?api_key=TEST&format=json&max=25&offset=0&q=Trader%20Joe%27s%20Acacia%20Honey&sort=n
+    uri: https://api.nal.usda.gov/ndb/search/?api_key=4K3YWLNk8MuWsSF1YhcxKyp8l88lAc36KVya2IsX&format=json&max=25&offset=0&q=Trader%20Joe%27s%20Acacia%20Honey&sort=n
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 14 Oct 2018 06:06:41 GMT
+      - Sun, 14 Oct 2018 06:18:07 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -33,7 +33,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3594'
+      - '3593'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -46,7 +46,7 @@ http_interactions:
       - max-age=31536000; includeSubDomains; preload
       - max-age=63072000; includeSubDomains; preload
       Age:
-      - '5'
+      - '0'
       Via:
       - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Cache:
@@ -93,10 +93,10 @@ http_interactions:
             }
         }
     http_version: 
-  recorded_at: Sun, 14 Oct 2018 06:06:41 GMT
+  recorded_at: Sun, 14 Oct 2018 06:18:07 GMT
 - request:
     method: get
-    uri: https://api.nal.usda.gov/ndb/reports/?api_key=TEST&format=json&ndbno=45085468&type=b
+    uri: https://api.nal.usda.gov/ndb/reports/?api_key=4K3YWLNk8MuWsSF1YhcxKyp8l88lAc36KVya2IsX&format=json&ndbno=45085468&type=b
     body:
       encoding: US-ASCII
       string: ''
@@ -115,7 +115,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 14 Oct 2018 06:06:41 GMT
+      - Sun, 14 Oct 2018 06:18:07 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -127,7 +127,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3593'
+      - '3592'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -140,7 +140,7 @@ http_interactions:
       - max-age=31536000; includeSubDomains; preload
       - max-age=63072000; includeSubDomains; preload
       Age:
-      - '4'
+      - '0'
       Via:
       - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
       X-Cache:
@@ -263,5 +263,5 @@ http_interactions:
         \           ]\n        },\n        \"footnotes\": [\n            \n        ]\n
         \   }\n}"
     http_version: 
-  recorded_at: Sun, 14 Oct 2018 06:06:42 GMT
+  recorded_at: Sun, 14 Oct 2018 06:18:07 GMT
 recorded_with: VCR 4.0.0
