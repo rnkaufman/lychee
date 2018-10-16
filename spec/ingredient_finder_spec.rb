@@ -2,7 +2,7 @@ require 'vcr'
 require 'ingredient_finder'
 
 RSpec.describe IngredientFinder do
-  subject { IngredientFinder.new("Trader Joe's Acacia Honey") }
+  subject { IngredientFinder.new("00555500") }
   describe "#list_ingredients" do
     context "with discovered item" do
       it "returns the ingredients" do

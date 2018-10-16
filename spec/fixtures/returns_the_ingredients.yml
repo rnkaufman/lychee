@@ -264,4 +264,82 @@ http_interactions:
         \   }\n}"
     http_version: 
   recorded_at: Sun, 14 Oct 2018 06:18:07 GMT
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/ndb/search/?api_key=4K3YWLNk8MuWsSF1YhcxKyp8l88lAc36KVya2IsX&format=json&max=25&offset=0&q=00555500&sort=n
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 16 Oct 2018 03:33:59 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3599'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "q": "00555500",
+                "sr": "1",
+                "ds": "any",
+                "start": 0,
+                "end": 1,
+                "total": 1,
+                "group": "",
+                "sort": "n",
+                "item": [
+                    {
+                        "offset": 0,
+                        "group": "Branded Food Products Database",
+                        "name": "TRADER JOE'S, ACACIA HONEY, UPC: 00555500",
+                        "ndbno": "45085468",
+                        "ds": "LI",
+                        "manu": "TRADER JOE'S"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Tue, 16 Oct 2018 03:34:00 GMT
 recorded_with: VCR 4.0.0
